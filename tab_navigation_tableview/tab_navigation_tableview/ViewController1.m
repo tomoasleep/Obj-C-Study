@@ -29,6 +29,8 @@
 	// Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
     self.title = @"朝";
+    self.navigationItem.rightBarButtonItem =
+        [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:nil];
     
     UILabel *label = [[UILabel alloc] initWithFrame:self.view.bounds];
     label.text = @"Hello, NemuiWorld!"; 
