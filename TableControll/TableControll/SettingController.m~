@@ -1,0 +1,75 @@
+//
+//  SettingController.m
+//  tab_navigation_tableview
+//
+//  Created by kamado on 12/08/26.
+//  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
+//
+
+#import "SettingController.h"
+#import "ModalController.h"
+
+@interface SettingController ()
+
+@end
+
+@implementation SettingController
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    //button add
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [button setTitle:@"go to modal" forState:UIControlStateNormal];
+    
+    [button sizeToFit];
+    CGPoint newpoint = self.view.center;
+    newpoint.y += 50;
+    button.center = newpoint;
+    [button addTarget:self
+               action:@selector(buttonDidPush)
+     forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
+    
+    CMPopTipView* pop = [[CMPopTipView alloc]initWithMessage:@"This is button."];
+    pop.delegate = nil;
+    [pop presentPointingAtView:button inView:self.view animated:YES];
+}
+
+- (void)viewDidUnload
+{
+    [super viewDidUnload];
+    // Release any retained subviews of the main view.
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (id)init
+{
+    if (([super init])) {
+        // setting tabbar's view
+        self.title = @"setting";
+        self.tabBarItem = [[UITabBarItem alloc]initWithTabBarSystemItem:UITabBarSystemItemMore tag:2];
+    }
+    return self;
+}
+
+- (void)buttonDidPush
+{
+    ModalController *modal = [[ModalController alloc] init];
+    [self presentModalViewController:modal animated:YES];
+}
+     
+@end

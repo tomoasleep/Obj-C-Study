@@ -27,19 +27,32 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+}
+
+- (void)loadView
+{
+    UIView* view = [[UIView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.view = view;
+    NSLog(@"view: %f,%f", view.frame.size.width, view.frame.size.height);
     
+    //button add
     UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [button setTitle:@"go to modal" forState:UIControlStateNormal];
     
     [button sizeToFit];
-    CGPoint newpoint = self.view.center;
+    CGPoint newpoint = view.center;
     newpoint.y += 50;
     button.center = newpoint;
     [button addTarget:self
                action:@selector(buttonDidPush)
      forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:button];
+    [view addSubview:button];
+    
+    CMPopTipView* pop = [[CMPopTipView alloc]initWithMessage:@"This is button."];
+    pop.delegate = nil;
+    [pop presentPointingAtView:button inView:view animated:YES];
+    
+    self.view = view;
 }
 
 - (void)viewDidUnload

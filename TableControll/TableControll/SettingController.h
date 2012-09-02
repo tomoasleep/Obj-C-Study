@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "../CMPopTipView/CMPopTipView.h"
 
-@interface SettingController : UIViewController
+@interface SettingController : UIViewController <CMPopTipViewDelegate>
 
 @end

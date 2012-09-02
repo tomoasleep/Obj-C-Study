@@ -12,13 +12,14 @@
 		1675DCE415EB618500CC4EB3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1675DCE315EB618500CC4EB3 /* CoreGraphics.framework */; };
 		1675DCEA15EB618500CC4EB3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1675DCE815EB618500CC4EB3 /* InfoPlist.strings */; };
 		1675DCEC15EB618500CC4EB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1675DCEB15EB618500CC4EB3 /* main.m */; };
-		1675DD0415EB61D700CC4EB3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1675DCF715EB61D700CC4EB3 /* AppDelegate.m */; };
-		1675DD0515EB61D700CC4EB3 /* FinishedController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1675DCF915EB61D700CC4EB3 /* FinishedController.m */; };
-		1675DD0615EB61D700CC4EB3 /* ModalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1675DCFB15EB61D700CC4EB3 /* ModalController.m */; };
-		1675DD0715EB61D700CC4EB3 /* SettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1675DCFD15EB61D700CC4EB3 /* SettingController.m */; };
-		1675DD0815EB61D700CC4EB3 /* TaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1675DCFF15EB61D700CC4EB3 /* TaskController.m */; };
-		1675DD0915EB61D700CC4EB3 /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 1675DD0115EB61D700CC4EB3 /* ViewController1.m */; };
-		1675DD0A15EB61D700CC4EB3 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 1675DD0315EB61D700CC4EB3 /* ViewController2.m */; };
+		1675DD1B15EB722F00CC4EB3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1675DD0E15EB722F00CC4EB3 /* AppDelegate.m */; };
+		1675DD1C15EB722F00CC4EB3 /* FinishedController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1675DD1015EB722F00CC4EB3 /* FinishedController.m */; };
+		1675DD1D15EB722F00CC4EB3 /* ModalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1675DD1215EB722F00CC4EB3 /* ModalController.m */; };
+		1675DD1E15EB722F00CC4EB3 /* SettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1675DD1415EB722F00CC4EB3 /* SettingController.m */; };
+		1675DD1F15EB722F00CC4EB3 /* TaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1675DD1615EB722F00CC4EB3 /* TaskController.m */; };
+		1675DD2015EB722F00CC4EB3 /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 1675DD1815EB722F00CC4EB3 /* ViewController1.m */; };
+		1675DD2115EB722F00CC4EB3 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 1675DD1A15EB722F00CC4EB3 /* ViewController2.m */; };
+		1675DD3215EB76E400CC4EB3 /* CMPopTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1675DD3115EB76E400CC4EB3 /* CMPopTipView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,20 +31,22 @@
 		1675DCE915EB618500CC4EB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1675DCEB15EB618500CC4EB3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1675DCED15EB618500CC4EB3 /* TableControll-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TableControll-Prefix.pch"; sourceTree = "<group>"; };
-		1675DCF615EB61D700CC4EB3 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
-		1675DCF715EB61D700CC4EB3 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
-		1675DCF815EB61D700CC4EB3 /* FinishedController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FinishedController.h; path = ../FinishedController.h; sourceTree = "<group>"; };
-		1675DCF915EB61D700CC4EB3 /* FinishedController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FinishedController.m; path = ../FinishedController.m; sourceTree = "<group>"; };
-		1675DCFA15EB61D700CC4EB3 /* ModalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ModalController.h; path = ../ModalController.h; sourceTree = "<group>"; };
-		1675DCFB15EB61D700CC4EB3 /* ModalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ModalController.m; path = ../ModalController.m; sourceTree = "<group>"; };
-		1675DCFC15EB61D700CC4EB3 /* SettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingController.h; path = ../SettingController.h; sourceTree = "<group>"; };
-		1675DCFD15EB61D700CC4EB3 /* SettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingController.m; path = ../SettingController.m; sourceTree = "<group>"; };
-		1675DCFE15EB61D700CC4EB3 /* TaskController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TaskController.h; path = ../TaskController.h; sourceTree = "<group>"; };
-		1675DCFF15EB61D700CC4EB3 /* TaskController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TaskController.m; path = ../TaskController.m; sourceTree = "<group>"; };
-		1675DD0015EB61D700CC4EB3 /* ViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController1.h; path = ../ViewController1.h; sourceTree = "<group>"; };
-		1675DD0115EB61D700CC4EB3 /* ViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController1.m; path = ../ViewController1.m; sourceTree = "<group>"; };
-		1675DD0215EB61D700CC4EB3 /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController2.h; path = ../ViewController2.h; sourceTree = "<group>"; };
-		1675DD0315EB61D700CC4EB3 /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController2.m; path = ../ViewController2.m; sourceTree = "<group>"; };
+		1675DD0D15EB722F00CC4EB3 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1675DD0E15EB722F00CC4EB3 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1675DD0F15EB722F00CC4EB3 /* FinishedController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinishedController.h; sourceTree = "<group>"; };
+		1675DD1015EB722F00CC4EB3 /* FinishedController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinishedController.m; sourceTree = "<group>"; };
+		1675DD1115EB722F00CC4EB3 /* ModalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalController.h; sourceTree = "<group>"; };
+		1675DD1215EB722F00CC4EB3 /* ModalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalController.m; sourceTree = "<group>"; };
+		1675DD1315EB722F00CC4EB3 /* SettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingController.h; sourceTree = "<group>"; };
+		1675DD1415EB722F00CC4EB3 /* SettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingController.m; sourceTree = "<group>"; };
+		1675DD1515EB722F00CC4EB3 /* TaskController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskController.h; sourceTree = "<group>"; };
+		1675DD1615EB722F00CC4EB3 /* TaskController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskController.m; sourceTree = "<group>"; };
+		1675DD1715EB722F00CC4EB3 /* ViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
+		1675DD1815EB722F00CC4EB3 /* ViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
+		1675DD1915EB722F00CC4EB3 /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		1675DD1A15EB722F00CC4EB3 /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
+		1675DD2B15EB75BD00CC4EB3 /* CMPopTipView */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CMPopTipView; sourceTree = "<group>"; };
+		1675DD3115EB76E400CC4EB3 /* CMPopTipView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CMPopTipView.m; path = CMPopTipView/CMPopTipView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 		1675DCD015EB618400CC4EB3 = {
 			isa = PBXGroup;
 			children = (
+				1675DD3115EB76E400CC4EB3 /* CMPopTipView.m */,
+				1675DD2B15EB75BD00CC4EB3 /* CMPopTipView */,
 				1675DCE515EB618500CC4EB3 /* TableControll */,
 				1675DCDE15EB618500CC4EB3 /* Frameworks */,
 				1675DCDC15EB618500CC4EB3 /* Products */,
@@ -90,20 +95,20 @@
 		1675DCE515EB618500CC4EB3 /* TableControll */ = {
 			isa = PBXGroup;
 			children = (
-				1675DCF615EB61D700CC4EB3 /* AppDelegate.h */,
-				1675DCF715EB61D700CC4EB3 /* AppDelegate.m */,
-				1675DCF815EB61D700CC4EB3 /* FinishedController.h */,
-				1675DCF915EB61D700CC4EB3 /* FinishedController.m */,
-				1675DCFA15EB61D700CC4EB3 /* ModalController.h */,
-				1675DCFB15EB61D700CC4EB3 /* ModalController.m */,
-				1675DCFC15EB61D700CC4EB3 /* SettingController.h */,
-				1675DCFD15EB61D700CC4EB3 /* SettingController.m */,
-				1675DCFE15EB61D700CC4EB3 /* TaskController.h */,
-				1675DCFF15EB61D700CC4EB3 /* TaskController.m */,
-				1675DD0015EB61D700CC4EB3 /* ViewController1.h */,
-				1675DD0115EB61D700CC4EB3 /* ViewController1.m */,
-				1675DD0215EB61D700CC4EB3 /* ViewController2.h */,
-				1675DD0315EB61D700CC4EB3 /* ViewController2.m */,
+				1675DD0D15EB722F00CC4EB3 /* AppDelegate.h */,
+				1675DD0E15EB722F00CC4EB3 /* AppDelegate.m */,
+				1675DD0F15EB722F00CC4EB3 /* FinishedController.h */,
+				1675DD1015EB722F00CC4EB3 /* FinishedController.m */,
+				1675DD1115EB722F00CC4EB3 /* ModalController.h */,
+				1675DD1215EB722F00CC4EB3 /* ModalController.m */,
+				1675DD1315EB722F00CC4EB3 /* SettingController.h */,
+				1675DD1415EB722F00CC4EB3 /* SettingController.m */,
+				1675DD1515EB722F00CC4EB3 /* TaskController.h */,
+				1675DD1615EB722F00CC4EB3 /* TaskController.m */,
+				1675DD1715EB722F00CC4EB3 /* ViewController1.h */,
+				1675DD1815EB722F00CC4EB3 /* ViewController1.m */,
+				1675DD1915EB722F00CC4EB3 /* ViewController2.h */,
+				1675DD1A15EB722F00CC4EB3 /* ViewController2.m */,
 				1675DCE615EB618500CC4EB3 /* Supporting Files */,
 			);
 			path = TableControll;
@@ -181,14 +186,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1675DD3215EB76E400CC4EB3 /* CMPopTipView.m in Sources */,
 				1675DCEC15EB618500CC4EB3 /* main.m in Sources */,
-				1675DD0415EB61D700CC4EB3 /* AppDelegate.m in Sources */,
-				1675DD0515EB61D700CC4EB3 /* FinishedController.m in Sources */,
-				1675DD0615EB61D700CC4EB3 /* ModalController.m in Sources */,
-				1675DD0715EB61D700CC4EB3 /* SettingController.m in Sources */,
-				1675DD0815EB61D700CC4EB3 /* TaskController.m in Sources */,
-				1675DD0915EB61D700CC4EB3 /* ViewController1.m in Sources */,
-				1675DD0A15EB61D700CC4EB3 /* ViewController2.m in Sources */,
+				1675DD1B15EB722F00CC4EB3 /* AppDelegate.m in Sources */,
+				1675DD1C15EB722F00CC4EB3 /* FinishedController.m in Sources */,
+				1675DD1D15EB722F00CC4EB3 /* ModalController.m in Sources */,
+				1675DD1E15EB722F00CC4EB3 /* SettingController.m in Sources */,
+				1675DD1F15EB722F00CC4EB3 /* TaskController.m in Sources */,
+				1675DD2015EB722F00CC4EB3 /* ViewController1.m in Sources */,
+				1675DD2115EB722F00CC4EB3 /* ViewController2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
