@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RSSChannelListController : UIViewController
+@interface RSSChannelListController : UITableViewController<UITableViewDelegate, UITableViewDataSource>
+{
+    //UITableView *_tableView;
+}
+@property (assign) id delegate;
 
 @end

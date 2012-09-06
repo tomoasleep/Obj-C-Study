@@ -7,18 +7,29 @@
 //
 
 #import "RSSAppController.h"
+#import "RSSChannelListController.h"
 #import "RSSChannelManager.h"
 
 @implementation RSSAppController
 
+@synthesize window = _window;
+
 // RSSAppControllerの参照を入れておく共用static変数
 static RSSAppController* _sharedInstance = nil;
+
+//----------------------------------------------------------//
+#pragma mark -- Accessor --
+//----------------------------------------------------------//
 
 + (RSSAppController*)sharedController
 {
     //共用static変数を返す
     return _sharedInstance;
 }
+
+//----------------------------------------------------------//
+#pragma mark -- Initialize --
+//----------------------------------------------------------//
 
 -(id)init
 {
@@ -37,8 +48,23 @@ static RSSAppController* _sharedInstance = nil;
 {
     [[RSSChannelManager sharedManager] load];
     
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    // Override point for customization after application launch.
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    // make RSSChannelListController(RootViewController)
+    _ChannelListController = [[RSSChannelListController alloc] init];
+    
+    // make NavigationController (add RootViewController)
+    _navChannelListController = [[UINavigationController alloc]
+                                 initWithRootViewController:_ChannelListController];
+    _navChannelListController.view.frame = [[UIScreen mainScreen] bounds];
+    
+    [self.window addSubview:_navChannelListController.view];
+    
     // to fix 
     //_channelListController = nil;
+    [self.window makeKeyAndVisible];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application

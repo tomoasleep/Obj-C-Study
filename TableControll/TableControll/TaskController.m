@@ -25,6 +25,7 @@
         self.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"Task" image:nil tag:0];
         
         // set items in table
+        
         _items = [[NSMutableArray alloc] initWithObjects:
                   @"ViewController1",
                   @"ViewController2",
@@ -37,6 +38,8 @@
                   @"ViewController1",
                   @"ViewController2",
                   nil ];
+//        _items = [[NSMutableArray alloc] initWithObjects:
+//                  nil ];
     }
     return self;
 }

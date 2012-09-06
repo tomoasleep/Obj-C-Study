@@ -9,7 +9,12 @@
 #import <Foundation/Foundation.h>
 
 @interface RSSAppController : NSObject <UIApplicationDelegate>
+{
+    UIViewController* _ChannelListController;
+    UIViewController* _navChannelListController;
+}
 
+@property (strong, nonatomic) UIWindow *window;
 //初期化
 + (RSSAppController*)sharedController;
 

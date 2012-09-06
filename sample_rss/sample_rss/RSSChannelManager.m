@@ -101,6 +101,7 @@ static RSSChannelManager* _sharedInstance = nil;
 
 - (void)save
 {
+    NSLog(@"Saving");
     // ファイルマネージャを取得する
     NSFileManager* fileMgr;
     fileMgr = [NSFileManager defaultManager];
